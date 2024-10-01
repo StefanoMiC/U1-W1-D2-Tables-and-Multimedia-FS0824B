@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> U1 W1 D2 - Tables</title>
+
+    <style>
+        /* generazione tabella */
+        table {
+            width: 100%;
+            border: 2px solid black;
+            /* proprietà commentata, non verrà interpretata dal browser */
+            border-collapse: collapse;
+            /* il collapse ci attiva la possibilità di stilizzare anche il bordo delle tr */
+
+            /* border-spacing: 3px; */
+            /* border-spacing modifica lo spazio tra le celle */
+        }
+
+        /* tr {
+            border: 2px solid blue;
+        } */
+
+        th {
+            text-align: left;
+            width: 25%;
+            background-color: #ebebeb;
+        }
+
+        td {
+            width: 25%;
+            background-color: gold;
+            /* border: 3px solid red; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>
+        U1 W1 D2 - Tables
+    </h1>
+
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th>Età</th>
+            <th>Telefono</th>
+        </tr>
+        <tr>
+            <td>Stefano</td>
+            <td>Miceli</td>
+            <td>35</td>
+            <td>123918273123</td>
+        </tr>
+        <tr>
+            <td>Stefano</td>
+            <td>Miceli</td>
+            <td></td>
+            <td>123918273123</td>
+        </tr>
+    </table>
+
+    <br />
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="5" style="text-align: center">FS0824B</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3"><strong>Nomi</strong></td>
+            </tr>
+            <tr>
+                <td>Adele</td>
+                <td>Edoardo</td>
+                <td>Emanuele</td>
+                <td>Matteo</td>
+            </tr>
+            <tr>
+                <td>Martina</td>
+                <td>Gaetano</td>
+                <td>Andreea</td>
+                <td>Federico</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5" style="text-align: center; background-color: black; color: white;">
+                    <strong>Epicode</strong>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>

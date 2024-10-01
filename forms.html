@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U1 W1 D2 - Forms</title>
+</head>
+
+<body>
+
+    <h1>U1 W1 D2 - Forms</h1>
+    <a href="./tables.html" target="_blank"> <button>vai a tabelle</button> </a>
+    <hr />
+
+    <form>
+        <div>
+            <label for="formName">Nome</label>
+            <input type="text" id="formName" placeholder="inserisci il tuo nome" required />
+        </div>
+        <br />
+
+        <div>
+            <label for="formSurname">Cognome</label>
+            <input type="text" id="formSurname" placeholder="inserisci il tuo cognome" required />
+        </div>
+        <br />
+
+        <div>
+            <label for="formAddress">Indirizzo</label>
+            <input type="text" id="formAddress" placeholder="indirizzo" required />
+        </div>
+        <br />
+
+        <div>
+            <label for="formEmail">Email</label>
+            <input type="email" id="formEmail" placeholder="mario@rossi.it" required />
+        </div>
+        <br />
+
+        <div>
+            <label for="formAge">Età</label>
+            <input type="number" id="formAge" placeholder="18+" required min="18" max="99" />
+        </div>
+        <br />
+
+        <div>
+            <input type="checkbox" id="formCheck" checked />
+            <label for="formCheck">Fumatori</label>
+        </div>
+        <br />
+
+        <div>
+            <label for="formNumOfPeople">Numero di persone</label>
+            <select id="formNumOfPeople">
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+        <br />
+
+
+        <!-- input di tipo radio DEVONO avere uno stesso attributo name (con stesso valore) -->
+        <div>
+            <h3>Mezzo di trasporto</h3>
+            <input name="transportation" type="radio" id="formRadio1" required />
+            <label for="formRadio1">Macchina</label>
+            <input name="transportation" type="radio" id="formRadio2" required />
+            <label for="formRadio2">Scooter</label>
+            <input name="transportation" type="radio" id="formRadio3" required />
+            <label for="formRadio3">Bicicletta</label>
+        </div>
+        <br />
+
+        <div>
+            <label for="formNotes">Note</label>
+            <textarea id="formNotes" placeholder="qualcosa da aggiungere?" cols="100" rows="8"></textarea>
+        </div>
+        <br />
+
+        <input type="button" value="Annulla" />
+        <!-- il buttone di tipo submit è il principale, bisogna averne sempre almeno uno e si occuperà di validare i 
+        campi se sono presenti dei required come attributo, e di inviare i dati del form -->
+        <button type="submit">Invia i dati</button>
+        <br />
+        <hr />
+        <!-- il bottone reset svuoterà i campi da subito senza chiedere conferma (da usare con cautela) -->
+        <button type="reset">Reset</button>
+        <!-- il bottone con type button serve a creare comportamenti personalizzati, evitando l'invio del form -->
+        <button type="button">Altro</button>
+    </form>
+
+
+    <br />
+    <form>
+        <fieldset>
+            <legend>Login</legend>
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Inserisci il tuo username">
+            </div>
+            <br />
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="*****">
+            </div>
+        </fieldset>
+
+
+        <br />
+        <button type="submit">Invia</button>
+    </form>
+
+</body>
+
+</html>
